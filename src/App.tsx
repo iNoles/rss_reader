@@ -40,7 +40,7 @@ export default function App() {
         return (
           <div className="flex pt-5">
           <div className="flex-none w-48 mr-4">
-            <img src={item.thumbnail ? item.thumbnail : ""} />
+            <img src={item.thumbnail ? item.thumbnail : ""} alt={item.title} />
           </div>
           <div className="flex-auto">
             <h2 className="text-lg font-bold">{item.title}</h2>
