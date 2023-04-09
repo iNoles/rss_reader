@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import FeedForm from './components/Feedform';
 
 interface FeedItem {
   link: string | null | undefined;
@@ -29,35 +29,24 @@ export default function App() {
       thumbnail: el.querySelector("thumbnail")?.getAttribute("url"),
       description: el.querySelector("description")?.textContent?.replace(/<[^>]+>/g, '')
     }));
-    console.log(feedItems);
     setItems(feedItems);
   }
 
   return (
-    <div className='container'>
+    <div className="container mx-auto mt-5 p-4 bg-white">
        <h4>URL</h4>
-       <form onSubmit={getRss}>
-       <input
-          type="url"
-          name="rssUrl"
-          id="rssUrl"
-          placeholder="https://www.example.com/.rss"
-          onChange={(e) => handleOnChange(e) }
-          required
-        />
-        <button type='submit'>Submit</button>
-       </form>
+       <FeedForm getRss={getRss} handleOnChange={handleOnChange }/>
        { items.map((item) => {
         return (
-          <div className='article'>
-          <div className='article-image'>
+          <div className="flex">
+          <div className="flex-none w-48">
             <img src={item.thumbnail ? item.thumbnail : ""} />
           </div>
-          <div className='article-info'>
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
+          <div className="flex-auto p-6">
+            <h2 className="text-lg font-bold">{item.title}</h2>
+            <p className="text-base mt-3 mb-1">{item.description}</p>
             <a target="_blank" rel="noreferrer" href={item.link ? item.link : ""}>
-              <button>Read article</button>
+              <button className="bg-blue-500 text-white p-2 text-sm rounded-md mt-2">Read article</button>
             </a>
           </div>
          </div>
