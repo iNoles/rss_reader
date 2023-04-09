@@ -39,7 +39,7 @@ export default function App() {
        { items.map((item) => {
         return (
           <div className="flex pt-5">
-          <div className="flex-none w-48">
+          <div className="flex-none w-48 mr-4">
             <img src={item.thumbnail ? item.thumbnail : ""} />
           </div>
           <div className="flex-auto">
