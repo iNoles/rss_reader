@@ -38,11 +38,11 @@ export default function App() {
        <FeedForm getRss={getRss} handleOnChange={handleOnChange }/>
        { items.map((item) => {
         return (
-          <div className="flex">
+          <div className="flex pt-5">
           <div className="flex-none w-48">
             <img src={item.thumbnail ? item.thumbnail : ""} />
           </div>
-          <div className="flex-auto p-6">
+          <div className="flex-auto">
             <h2 className="text-lg font-bold">{item.title}</h2>
             <p className="text-base mt-3 mb-1">{item.description}</p>
             <a target="_blank" rel="noreferrer" href={item.link ? item.link : ""}>
