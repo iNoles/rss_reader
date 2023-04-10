@@ -17,8 +17,4 @@ Instructions for other developers on how to install and run your code on their l
 npm start
 
 Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-Most open source projects use the MIT license. Feel free to choose whichever license you prefer.
+Open http://localhost:3000 to view it in the browser
