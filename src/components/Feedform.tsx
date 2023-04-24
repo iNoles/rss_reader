@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react'
 
 interface FeedFormType {
-  getRss: React.FormEventHandler<HTMLFormElement>,
+  getRss: React.FormEventHandler<HTMLFormElement>
   handleOnChange: React.ChangeEventHandler<HTMLInputElement>
 }
 
-export default function FeedForm({ getRss, handleOnChange }: FeedFormType) {
-    return (
+export default function FeedForm ({ getRss, handleOnChange }: FeedFormType): JSX.Element {
+  return (
     <form onSubmit={getRss}>
         <input
           className="p-2 mt-4 md:mt-0 w-5/6 md:mx-4"
@@ -14,7 +14,7 @@ export default function FeedForm({ getRss, handleOnChange }: FeedFormType) {
           name="rssUrl"
           id="rssUrl"
           placeholder="https://www.example.com/.rss"
-          onChange={(e) => handleOnChange(e) }
+          onChange={(e) => { handleOnChange(e) } }
           required
         />
         <button
@@ -23,5 +23,5 @@ export default function FeedForm({ getRss, handleOnChange }: FeedFormType) {
           Submit
         </button>
     </form>
-    );
+  )
 }
