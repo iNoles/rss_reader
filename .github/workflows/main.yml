@@ -28,4 +28,4 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       - name: Build and Deploy React app to GitHub Pages
-        uses: omkartapale/react-deployment-gh-pages@v1.0.0
+        uses: omkartapale/react-deployment-gh-pages@7ac9094be620590ff7944735a9c9dfe320f5081a # v1.0.0
