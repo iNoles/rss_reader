@@ -1,10 +1,10 @@
-# DevProjects - RSS feed reader website
+# DevProjects - RSS feed reader site
 
 This is an open source project from [DevProjects](http://www.codementor.io/projects). Feedback and questions are welcome!
-Find the project requirements here: [RSS feed reader website](https://www.codementor.io/projects/web/rss-feed-reader-website-atx32j280x)
+Find the project requirements here: [RSS feed reader site](https://www.codementor.io/projects/web/rss-feed-reader-website-atx32j280x)
 
 ## Tech/framework used
-Built with Node.js, ReactJS, Typescript and TailwindCSS
+Built with Node.js, ReactJS, TypeScript and TailwindCSS
 
 ## Screenshots and demo
 Screenshots of your app and/or a link to your live demo
