@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
 import { type ReportCallback } from 'web-vitals'
 
 const reportWebVitals = () => (onPerfEntry: ReportCallback) => {
