@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rss_reader/static/css/main.aa6e3cd6.css",
+    "main.js": "/rss_reader/static/js/main.3cb77196.js",
+    "index.html": "/rss_reader/index.html",
+    "main.aa6e3cd6.css.map": "/rss_reader/static/css/main.aa6e3cd6.css.map",
+    "main.3cb77196.js.map": "/rss_reader/static/js/main.3cb77196.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa6e3cd6.css",
+    "static/js/main.3cb77196.js"
+  ]
+}
