@@ -10,8 +10,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/",
-    "deploy": "node publish.cjs"
+    "format": "prettier --write src/"
   },
   "dependencies": {
     "vue": "^3.4.29"
