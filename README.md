@@ -6,6 +6,7 @@ A simple Vue.js application to fetch and display RSS feeds. This project uses Vu
 
 - Fetch RSS feeds from a user-provided URL.
 - Display feed items with titles and descriptions.
+- Styled using TailwindCSS for a modern look.
 
 ## Getting Started
 

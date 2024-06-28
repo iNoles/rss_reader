@@ -1,16 +1,22 @@
 <template>
-  <div id="app">
-    <h1>Vue.js RSS Reader</h1>
-    <form @submit.prevent="fetchRSS">
-      <input v-model="rssUrl" placeholder="Enter RSS feed URL" />
-      <button type="submit">Fetch RSS</button>
+  <div id="app" class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4 text-center">RSS Reader</h1>
+    <form @submit.prevent="fetchRSS" class="mb-4">
+      <input
+        v-model="rssUrl"
+        placeholder="Enter RSS feed URL"
+        class="border p-2 rounded w-full mb-2"
+      />
+      <button type="submit" class="bg-blue-500 text-white p-2 rounded w-full">
+        Fetch RSS
+      </button>
     </form>
-    <div v-if="feed">
-      <h2>{{ feed.title }}</h2>
+    <div v-if="feed" class="mt-4">
+      <h2 class="text-xl font-semibold mb-2">{{ feed.title }}</h2>
       <ul>
-        <li v-for="item in feed.items" :key="item.link">
-          <a :href="item.link" target="_blank">{{ item.title }}</a>
-          <div v-html="item.description"></div>
+        <li v-for="item in feed.items" :key="item.link" class="mb-4">
+          <a :href="item.link" target="_blank" class="text-blue-600 font-medium hover:underline">{{ item.title }}</a>
+          <div v-html="item.description" class="mt-1"></div>
         </li>
       </ul>
     </div>
@@ -64,35 +70,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-input {
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 10px 0;
-}
+/* No custom styles needed */
 </style>
