@@ -21,8 +21,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/iNoles/rss-reader.git
-   cd rss-reader
+   git clone https://github.com/iNoles/rss_reader.git
+   cd rss_reader
    ```
 
 2. Install dependencies:
