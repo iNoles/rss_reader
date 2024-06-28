@@ -1,5 +1,5 @@
 {
-  "name": "rss-reader",
+  "name": "rss_reader",
   "version": "1.0.0",
   "private": true,
   "type": "module",
