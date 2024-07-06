@@ -7,7 +7,7 @@
         placeholder="Enter RSS feed URL"
         class="border p-2 rounded w-full mb-2"
       />
-      <button type="submit" class="bg-blue-500 text-white p-2 rounded w-full">
+      <button type="submit" class="bg-blue-800 text-white p-2 rounded w-full">
         Fetch RSS
       </button>
     </form>
